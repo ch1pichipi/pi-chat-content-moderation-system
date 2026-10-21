@@ -1,0 +1,11 @@
+id,request_id,account,app_id,area_id,area_name,server_id,nickname,context_messages,current_message,judge_result,context_type,reason,confidence,level,label,prediction,reviewed_at,forbid_considered,forbid_deduped,create_time
+log_000001,req_34718,normal_player_b,app_game_001,area_8,区服7,server_75,别打我我是奶龙,,这个装备怎么样,正常,chat,-1,0.11,low,正常,正常,2026-07-23 14:48:58.878,true,true,2026-07-23 14:48:53.878
+log_000002,req_21752,repeat_violator_y,app_game_001,area_1,区服4,server_89,我已启动,前一条消息内容|再前一条消息,有人组队吗,正常,chat,-1,0.07,low,正常,正常,2026-07-23 14:48:58.909,false,false,2026-07-23 14:48:53.909
+log_000003,req_15317,normal_player_b,app_game_001,area_9,区服7,server_95,不吃香菜,,月卡买成改名卡了,正常,chat,-1,0.12,low,正常,正常,2026-07-23 14:48:58.924,false,false,2026-07-23 14:48:53.924
+log_000004,req_25901,advertiser02,app_game_001,area_5,区服4,server_52,一对跳跳虎，两头脆脆鲨,,异世界太好玩了,正常,chat,-1,0.11,low,正常,正常,2026-07-23 14:48:58.944,false,false,2026-07-23 14:48:53.944
+log_000005,req_39002,normal_player_b,app_game_001,area_5,区服9,server_17,广告账号1,,这个装备怎么样,正常,chat,-1,0.17,low,正常,正常,2026-07-23 14:48:55.959,false,false,2026-07-23 14:48:53.959
+log_000006,req_96290,user001,app_game_001,area_6,区服6,server_86,测试昵称,,我要投诉,其他违禁,chat,0,0.81,high,其他违禁,其他违禁,2026-07-23 14:48:58.979,true,false,2026-07-23 14:48:53.979
+log_000007,req_7520,advertiser01,app_game_001,area_6,区服5,server_90,我已启动,,这个内容违规,其他违禁,chat,0,0.62,medium,其他违禁,其他违禁,2026-07-23 14:48:54.996,true,true,2026-07-23 14:48:53.996
+log_000008,req_83206,abuser02,app_game_001,area_1,区服8,server_66,一对跳跳虎，两头脆脆鲨,前一条消息内容|再前一条消息,我要投诉,其他违禁,chat,0,0.57,medium,其他违禁,正常,2026-07-23 14:48:57.016,false,false,2026-07-23 14:48:54.016
+log_000009,req_25592,normal_player_a,app_game_001,area_2,区服9,server_82,测试昵称,,这个内容违规,其他违禁,chat,0,0.86,high,其他违禁,其他违禁,2026-07-23 14:48:55.037,true,true,2026-07-23 14:48:54.037
+log_000010,req_81378,repeat_violator_y,app_game_001,area_5,区服10,server_69,服主别踢我我没开透,,我要投诉,其他违禁,chat,0,0.38,low,其他违禁,其他违禁,2026-07-23 14:48:55.048,false,true,2026-07-23 14:48:54.048

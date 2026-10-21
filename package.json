@@ -4,7 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm run test:chat-risk",
+    "test:chat-risk": "node --import tsx --test \"code/shared/lib/tools/chat_risk_log_scope/**/*.test.ts\"",
+    "typecheck": "npm run typecheck:chat-risk",
+    "typecheck:chat-risk": "tsc --noEmit -p code/shared/lib/tools/chat_risk_log_scope/tsconfig.json",
+    "parity:chat-risk": "tsx code/shared/lib/tools/chat_risk_log_scope/scripts/parity-check.ts",
+    "generate:chat-risk-fixture": "tsx code/shared/lib/tools/chat_risk_log_scope/scripts/generate-real-fixture.ts",
+    "generate:chat-risk-agent-eval": "tsx code/shared/lib/tools/chat_risk_log_scope/scripts/generate-agent-eval.ts",
+    "eval:chat-risk-agent": "tsx code/shared/lib/tools/chat_risk_log_scope/scripts/evaluate-agent-output.ts"
   },
   "repository": {
     "type": "git",
@@ -19,9 +26,12 @@
   },
   "homepage": "https://github.com/ch1pichipi/pi-chat-content-moderation-system#readme",
   "dependencies": {
-    "@earendil-works/pi-coding-agent": "^1.3.0"
+    "@earendil-works/pi-coding-agent": "^1.3.0",
+    "typebox": "1.3.27"
   },
   "devDependencies": {
-    "tsx": "^4.23.15"
+    "@types/node": "^26.6.5",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
   }
 }

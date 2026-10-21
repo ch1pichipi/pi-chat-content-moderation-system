@@ -1,0 +1,906 @@
+{
+  "dataset": "agent_eval_20261020_100",
+  "description": "盲测日志的 ground truth，仅用于评分；运行 Agent 时不得提供此文件或所在目录。",
+  "labels": [
+    {
+      "id": "log_000001",
+      "expected_risk": false,
+      "expected_reason": -1,
+      "expected_label": "正常",
+      "expected_action": "放行",
+      "difficulty": "easy",
+      "note": "正常对话，含上下文"
+    },
+    {
+      "id": "log_000002",
+      "expected_risk": false,
+      "expected_reason": -1,
+      "expected_label": "正常",
+      "expected_action": "放行",
+      "difficulty": "easy",
+      "note": "正常对话"
+    },
+    {
+      "id": "log_000003",
+      "expected_risk": false,
+      "expected_reason": -1,
+      "expected_label": "正常",
+      "expected_action": "放行",
+      "difficulty": "easy",
+      "note": "正常对话"
+    },
+    {
+      "id": "log_000004",
+      "expected_risk": false,
+      "expected_reason": -1,
+      "expected_label": "正常",
+      "expected_action": "放行",
+      "difficulty": "easy",
+      "note": "正常对话"
+    },
+    {
+      "id": "log_000005",
+      "expected_risk": false,
+      "expected_reason": -1,
+      "expected_label": "正常",
+      "expected_action": "放行",
+      "difficulty": "easy",
+      "note": "正常对话，含上下文"
+    },
+    {
+      "id": "log_000006",
+      "expected_risk": false,
+      "expected_reason": -1,
+      "expected_label": "正常",
+      "expected_action": "放行",
+      "difficulty": "easy",
+      "note": "正常对话"
+    },
+    {
+      "id": "log_000007",
+      "expected_risk": false,
+      "expected_reason": -1,
+      "expected_label": "正常",
+      "expected_action": "放行",
+      "difficulty": "easy",
+      "note": "正常对话"
+    },
+    {
+      "id": "log_000008",
+      "expected_risk": false,
+      "expected_reason": -1,
+      "expected_label": "正常",
+      "expected_action": "放行",
+      "difficulty": "easy",
+      "note": "正常对话"
+    },
+    {
+      "id": "log_000009",
+      "expected_risk": false,
+      "expected_reason": -1,
+      "expected_label": "正常",
+      "expected_action": "放行",
+      "difficulty": "easy",
+      "note": "正常对话，含上下文"
+    },
+    {
+      "id": "log_000010",
+      "expected_risk": false,
+      "expected_reason": -1,
+      "expected_label": "正常",
+      "expected_action": "放行",
+      "difficulty": "easy",
+      "note": "正常对话"
+    },
+    {
+      "id": "log_000011",
+      "expected_risk": false,
+      "expected_reason": -1,
+      "expected_label": "正常",
+      "expected_action": "放行",
+      "difficulty": "easy",
+      "note": "正常对话"
+    },
+    {
+      "id": "log_000012",
+      "expected_risk": false,
+      "expected_reason": -1,
+      "expected_label": "正常",
+      "expected_action": "放行",
+      "difficulty": "easy",
+      "note": "正常对话"
+    },
+    {
+      "id": "log_000013",
+      "expected_risk": false,
+      "expected_reason": -1,
+      "expected_label": "正常",
+      "expected_action": "放行",
+      "difficulty": "easy",
+      "note": "正常对话，含上下文"
+    },
+    {
+      "id": "log_000014",
+      "expected_risk": false,
+      "expected_reason": -1,
+      "expected_label": "正常",
+      "expected_action": "放行",
+      "difficulty": "easy",
+      "note": "正常对话"
+    },
+    {
+      "id": "log_000015",
+      "expected_risk": false,
+      "expected_reason": -1,
+      "expected_label": "正常",
+      "expected_action": "放行",
+      "difficulty": "easy",
+      "note": "正常对话"
+    },
+    {
+      "id": "log_000016",
+      "expected_risk": false,
+      "expected_reason": -1,
+      "expected_label": "正常",
+      "expected_action": "放行",
+      "difficulty": "easy",
+      "note": "正常对话"
+    },
+    {
+      "id": "log_000017",
+      "expected_risk": false,
+      "expected_reason": -1,
+      "expected_label": "正常",
+      "expected_action": "放行",
+      "difficulty": "easy",
+      "note": "正常对话，含上下文"
+    },
+    {
+      "id": "log_000018",
+      "expected_risk": false,
+      "expected_reason": -1,
+      "expected_label": "正常",
+      "expected_action": "放行",
+      "difficulty": "easy",
+      "note": "正常对话"
+    },
+    {
+      "id": "log_000019",
+      "expected_risk": false,
+      "expected_reason": -1,
+      "expected_label": "正常",
+      "expected_action": "放行",
+      "difficulty": "easy",
+      "note": "正常对话"
+    },
+    {
+      "id": "log_000020",
+      "expected_risk": false,
+      "expected_reason": -1,
+      "expected_label": "正常",
+      "expected_action": "放行",
+      "difficulty": "easy",
+      "note": "正常对话"
+    },
+    {
+      "id": "log_000021",
+      "expected_risk": false,
+      "expected_reason": -1,
+      "expected_label": "正常",
+      "expected_action": "放行",
+      "difficulty": "easy",
+      "note": "正常对话，含上下文"
+    },
+    {
+      "id": "log_000022",
+      "expected_risk": false,
+      "expected_reason": -1,
+      "expected_label": "正常",
+      "expected_action": "放行",
+      "difficulty": "easy",
+      "note": "正常对话"
+    },
+    {
+      "id": "log_000023",
+      "expected_risk": false,
+      "expected_reason": -1,
+      "expected_label": "正常",
+      "expected_action": "放行",
+      "difficulty": "easy",
+      "note": "正常对话"
+    },
+    {
+      "id": "log_000024",
+      "expected_risk": false,
+      "expected_reason": -1,
+      "expected_label": "正常",
+      "expected_action": "放行",
+      "difficulty": "easy",
+      "note": "正常对话"
+    },
+    {
+      "id": "log_000025",
+      "expected_risk": false,
+      "expected_reason": -1,
+      "expected_label": "正常",
+      "expected_action": "放行",
+      "difficulty": "easy",
+      "note": "正常对话，含上下文"
+    },
+    {
+      "id": "log_000026",
+      "expected_risk": false,
+      "expected_reason": -1,
+      "expected_label": "正常",
+      "expected_action": "放行",
+      "difficulty": "easy",
+      "note": "正常对话"
+    },
+    {
+      "id": "log_000027",
+      "expected_risk": false,
+      "expected_reason": -1,
+      "expected_label": "正常",
+      "expected_action": "放行",
+      "difficulty": "easy",
+      "note": "正常对话"
+    },
+    {
+      "id": "log_000028",
+      "expected_risk": false,
+      "expected_reason": -1,
+      "expected_label": "正常",
+      "expected_action": "放行",
+      "difficulty": "easy",
+      "note": "正常对话"
+    },
+    {
+      "id": "log_000029",
+      "expected_risk": false,
+      "expected_reason": -1,
+      "expected_label": "正常",
+      "expected_action": "放行",
+      "difficulty": "easy",
+      "note": "正常对话，含上下文"
+    },
+    {
+      "id": "log_000030",
+      "expected_risk": false,
+      "expected_reason": -1,
+      "expected_label": "正常",
+      "expected_action": "放行",
+      "difficulty": "easy",
+      "note": "正常对话"
+    },
+    {
+      "id": "log_000031",
+      "expected_risk": true,
+      "expected_reason": 5,
+      "expected_label": "广告诈骗",
+      "expected_action": "加入黑名单",
+      "difficulty": "easy",
+      "note": "广告诈骗，高置信度，适合考察明确风险识别，含上下文"
+    },
+    {
+      "id": "log_000032",
+      "expected_risk": true,
+      "expected_reason": 5,
+      "expected_label": "广告诈骗",
+      "expected_action": "加入黑名单",
+      "difficulty": "easy",
+      "note": "广告诈骗，高置信度，适合考察明确风险识别"
+    },
+    {
+      "id": "log_000033",
+      "expected_risk": true,
+      "expected_reason": 5,
+      "expected_label": "广告诈骗",
+      "expected_action": "加入黑名单",
+      "difficulty": "easy",
+      "note": "广告诈骗，高置信度，适合考察明确风险识别"
+    },
+    {
+      "id": "log_000034",
+      "expected_risk": true,
+      "expected_reason": 5,
+      "expected_label": "广告诈骗",
+      "expected_action": "加入黑名单",
+      "difficulty": "easy",
+      "note": "广告诈骗，高置信度，适合考察明确风险识别，含上下文"
+    },
+    {
+      "id": "log_000035",
+      "expected_risk": true,
+      "expected_reason": 5,
+      "expected_label": "广告诈骗",
+      "expected_action": "加入黑名单",
+      "difficulty": "easy",
+      "note": "广告诈骗，高置信度，适合考察明确风险识别"
+    },
+    {
+      "id": "log_000036",
+      "expected_risk": true,
+      "expected_reason": 5,
+      "expected_label": "广告诈骗",
+      "expected_action": "加入黑名单",
+      "difficulty": "easy",
+      "note": "广告诈骗，高置信度，适合考察明确风险识别"
+    },
+    {
+      "id": "log_000037",
+      "expected_risk": true,
+      "expected_reason": 5,
+      "expected_label": "广告诈骗",
+      "expected_action": "加入黑名单",
+      "difficulty": "easy",
+      "note": "广告诈骗，高置信度，适合考察明确风险识别，含上下文"
+    },
+    {
+      "id": "log_000038",
+      "expected_risk": true,
+      "expected_reason": 5,
+      "expected_label": "广告诈骗",
+      "expected_action": "加入黑名单",
+      "difficulty": "easy",
+      "note": "广告诈骗，高置信度，适合考察明确风险识别"
+    },
+    {
+      "id": "log_000039",
+      "expected_risk": true,
+      "expected_reason": 5,
+      "expected_label": "广告诈骗",
+      "expected_action": "加入黑名单",
+      "difficulty": "easy",
+      "note": "广告诈骗，高置信度，适合考察明确风险识别"
+    },
+    {
+      "id": "log_000040",
+      "expected_risk": true,
+      "expected_reason": 5,
+      "expected_label": "广告诈骗",
+      "expected_action": "加入黑名单",
+      "difficulty": "easy",
+      "note": "广告诈骗，高置信度，适合考察明确风险识别，含上下文"
+    },
+    {
+      "id": "log_000041",
+      "expected_risk": true,
+      "expected_reason": 5,
+      "expected_label": "广告诈骗",
+      "expected_action": "加入黑名单",
+      "difficulty": "easy",
+      "note": "广告诈骗，高置信度，适合考察明确风险识别"
+    },
+    {
+      "id": "log_000042",
+      "expected_risk": true,
+      "expected_reason": 5,
+      "expected_label": "广告诈骗",
+      "expected_action": "加入黑名单",
+      "difficulty": "easy",
+      "note": "广告诈骗，高置信度，适合考察明确风险识别"
+    },
+    {
+      "id": "log_000043",
+      "expected_risk": true,
+      "expected_reason": 5,
+      "expected_label": "广告诈骗",
+      "expected_action": "观察",
+      "difficulty": "medium",
+      "note": "广告诈骗，中置信度，需要结合上下文判断，含上下文"
+    },
+    {
+      "id": "log_000044",
+      "expected_risk": true,
+      "expected_reason": 5,
+      "expected_label": "广告诈骗",
+      "expected_action": "观察",
+      "difficulty": "medium",
+      "note": "广告诈骗，中置信度，需要结合上下文判断"
+    },
+    {
+      "id": "log_000045",
+      "expected_risk": true,
+      "expected_reason": 5,
+      "expected_label": "广告诈骗",
+      "expected_action": "观察",
+      "difficulty": "medium",
+      "note": "广告诈骗，中置信度，需要结合上下文判断"
+    },
+    {
+      "id": "log_000046",
+      "expected_risk": true,
+      "expected_reason": 5,
+      "expected_label": "广告诈骗",
+      "expected_action": "加入黑名单",
+      "difficulty": "easy",
+      "note": "广告诈骗，高置信度，适合考察明确风险识别，含上下文"
+    },
+    {
+      "id": "log_000047",
+      "expected_risk": true,
+      "expected_reason": 5,
+      "expected_label": "广告诈骗",
+      "expected_action": "加入黑名单",
+      "difficulty": "easy",
+      "note": "广告诈骗，高置信度，适合考察明确风险识别"
+    },
+    {
+      "id": "log_000048",
+      "expected_risk": true,
+      "expected_reason": 5,
+      "expected_label": "广告诈骗",
+      "expected_action": "加入黑名单",
+      "difficulty": "easy",
+      "note": "广告诈骗，高置信度，适合考察明确风险识别"
+    },
+    {
+      "id": "log_000049",
+      "expected_risk": true,
+      "expected_reason": 5,
+      "expected_label": "广告诈骗",
+      "expected_action": "加入黑名单",
+      "difficulty": "easy",
+      "note": "广告诈骗，高置信度，适合考察明确风险识别，含上下文"
+    },
+    {
+      "id": "log_000050",
+      "expected_risk": true,
+      "expected_reason": 5,
+      "expected_label": "广告诈骗",
+      "expected_action": "加入黑名单",
+      "difficulty": "easy",
+      "note": "广告诈骗，高置信度，适合考察明确风险识别"
+    },
+    {
+      "id": "log_000051",
+      "expected_risk": true,
+      "expected_reason": 5,
+      "expected_label": "广告诈骗",
+      "expected_action": "加入黑名单",
+      "difficulty": "easy",
+      "note": "广告诈骗，高置信度，适合考察明确风险识别"
+    },
+    {
+      "id": "log_000052",
+      "expected_risk": true,
+      "expected_reason": 5,
+      "expected_label": "广告诈骗",
+      "expected_action": "加入黑名单",
+      "difficulty": "easy",
+      "note": "广告诈骗，高置信度，适合考察明确风险识别，含上下文"
+    },
+    {
+      "id": "log_000053",
+      "expected_risk": true,
+      "expected_reason": 5,
+      "expected_label": "广告诈骗",
+      "expected_action": "人工复核",
+      "difficulty": "hard",
+      "note": "广告诈骗，低置信度，适合考察误杀判断"
+    },
+    {
+      "id": "log_000054",
+      "expected_risk": true,
+      "expected_reason": 5,
+      "expected_label": "广告诈骗",
+      "expected_action": "人工复核",
+      "difficulty": "hard",
+      "note": "广告诈骗，低置信度，适合考察误杀判断"
+    },
+    {
+      "id": "log_000055",
+      "expected_risk": true,
+      "expected_reason": 5,
+      "expected_label": "广告诈骗",
+      "expected_action": "人工复核",
+      "difficulty": "hard",
+      "note": "广告诈骗，低置信度，适合考察误杀判断，含上下文"
+    },
+    {
+      "id": "log_000056",
+      "expected_risk": true,
+      "expected_reason": 3,
+      "expected_label": "侮辱谩骂",
+      "expected_action": "禁言",
+      "difficulty": "easy",
+      "note": "侮辱谩骂，高置信度，适合考察明确风险识别，含上下文"
+    },
+    {
+      "id": "log_000057",
+      "expected_risk": true,
+      "expected_reason": 3,
+      "expected_label": "侮辱谩骂",
+      "expected_action": "禁言",
+      "difficulty": "easy",
+      "note": "侮辱谩骂，高置信度，适合考察明确风险识别"
+    },
+    {
+      "id": "log_000058",
+      "expected_risk": true,
+      "expected_reason": 3,
+      "expected_label": "侮辱谩骂",
+      "expected_action": "禁言",
+      "difficulty": "easy",
+      "note": "侮辱谩骂，高置信度，适合考察明确风险识别"
+    },
+    {
+      "id": "log_000059",
+      "expected_risk": true,
+      "expected_reason": 3,
+      "expected_label": "侮辱谩骂",
+      "expected_action": "禁言",
+      "difficulty": "easy",
+      "note": "侮辱谩骂，高置信度，适合考察明确风险识别，含上下文"
+    },
+    {
+      "id": "log_000060",
+      "expected_risk": true,
+      "expected_reason": 3,
+      "expected_label": "侮辱谩骂",
+      "expected_action": "禁言",
+      "difficulty": "easy",
+      "note": "侮辱谩骂，高置信度，适合考察明确风险识别"
+    },
+    {
+      "id": "log_000061",
+      "expected_risk": true,
+      "expected_reason": 3,
+      "expected_label": "侮辱谩骂",
+      "expected_action": "禁言",
+      "difficulty": "easy",
+      "note": "侮辱谩骂，高置信度，适合考察明确风险识别"
+    },
+    {
+      "id": "log_000062",
+      "expected_risk": true,
+      "expected_reason": 3,
+      "expected_label": "侮辱谩骂",
+      "expected_action": "人工复核",
+      "difficulty": "hard",
+      "note": "侮辱谩骂，低置信度，适合考察误杀判断，含上下文"
+    },
+    {
+      "id": "log_000063",
+      "expected_risk": true,
+      "expected_reason": 3,
+      "expected_label": "侮辱谩骂",
+      "expected_action": "人工复核",
+      "difficulty": "hard",
+      "note": "侮辱谩骂，低置信度，适合考察误杀判断"
+    },
+    {
+      "id": "log_000064",
+      "expected_risk": true,
+      "expected_reason": 3,
+      "expected_label": "侮辱谩骂",
+      "expected_action": "人工复核",
+      "difficulty": "hard",
+      "note": "侮辱谩骂，低置信度，适合考察误杀判断"
+    },
+    {
+      "id": "log_000065",
+      "expected_risk": true,
+      "expected_reason": 3,
+      "expected_label": "侮辱谩骂",
+      "expected_action": "人工复核",
+      "difficulty": "hard",
+      "note": "侮辱谩骂，低置信度，适合考察误杀判断，含上下文"
+    },
+    {
+      "id": "log_000066",
+      "expected_risk": true,
+      "expected_reason": 3,
+      "expected_label": "侮辱谩骂",
+      "expected_action": "人工复核",
+      "difficulty": "hard",
+      "note": "侮辱谩骂，低置信度，适合考察误杀判断"
+    },
+    {
+      "id": "log_000067",
+      "expected_risk": true,
+      "expected_reason": 3,
+      "expected_label": "侮辱谩骂",
+      "expected_action": "人工复核",
+      "difficulty": "hard",
+      "note": "侮辱谩骂，低置信度，适合考察误杀判断"
+    },
+    {
+      "id": "log_000068",
+      "expected_risk": true,
+      "expected_reason": 3,
+      "expected_label": "侮辱谩骂",
+      "expected_action": "禁言",
+      "difficulty": "easy",
+      "note": "侮辱谩骂，高置信度，适合考察明确风险识别，含上下文"
+    },
+    {
+      "id": "log_000069",
+      "expected_risk": true,
+      "expected_reason": 3,
+      "expected_label": "侮辱谩骂",
+      "expected_action": "禁言",
+      "difficulty": "easy",
+      "note": "侮辱谩骂，高置信度，适合考察明确风险识别"
+    },
+    {
+      "id": "log_000070",
+      "expected_risk": true,
+      "expected_reason": 3,
+      "expected_label": "侮辱谩骂",
+      "expected_action": "禁言",
+      "difficulty": "easy",
+      "note": "侮辱谩骂，高置信度，适合考察明确风险识别"
+    },
+    {
+      "id": "log_000071",
+      "expected_risk": true,
+      "expected_reason": 3,
+      "expected_label": "侮辱谩骂",
+      "expected_action": "观察",
+      "difficulty": "medium",
+      "note": "侮辱谩骂，中置信度，需要结合上下文判断，含上下文"
+    },
+    {
+      "id": "log_000072",
+      "expected_risk": true,
+      "expected_reason": 3,
+      "expected_label": "侮辱谩骂",
+      "expected_action": "观察",
+      "difficulty": "medium",
+      "note": "侮辱谩骂，中置信度，需要结合上下文判断"
+    },
+    {
+      "id": "log_000073",
+      "expected_risk": true,
+      "expected_reason": 3,
+      "expected_label": "侮辱谩骂",
+      "expected_action": "观察",
+      "difficulty": "medium",
+      "note": "侮辱谩骂，中置信度，需要结合上下文判断"
+    },
+    {
+      "id": "log_000074",
+      "expected_risk": true,
+      "expected_reason": 3,
+      "expected_label": "侮辱谩骂",
+      "expected_action": "观察",
+      "difficulty": "medium",
+      "note": "侮辱谩骂，中置信度，需要结合上下文判断，含上下文"
+    },
+    {
+      "id": "log_000075",
+      "expected_risk": true,
+      "expected_reason": 3,
+      "expected_label": "侮辱谩骂",
+      "expected_action": "观察",
+      "difficulty": "medium",
+      "note": "侮辱谩骂，中置信度，需要结合上下文判断"
+    },
+    {
+      "id": "log_000076",
+      "expected_risk": true,
+      "expected_reason": 1,
+      "expected_label": "政治宗教",
+      "expected_action": "封禁",
+      "difficulty": "easy",
+      "note": "政治宗教，高置信度，适合考察明确风险识别，含上下文"
+    },
+    {
+      "id": "log_000077",
+      "expected_risk": true,
+      "expected_reason": 1,
+      "expected_label": "政治宗教",
+      "expected_action": "封禁",
+      "difficulty": "easy",
+      "note": "政治宗教，高置信度，适合考察明确风险识别"
+    },
+    {
+      "id": "log_000078",
+      "expected_risk": true,
+      "expected_reason": 1,
+      "expected_label": "政治宗教",
+      "expected_action": "封禁",
+      "difficulty": "easy",
+      "note": "政治宗教，高置信度，适合考察明确风险识别"
+    },
+    {
+      "id": "log_000079",
+      "expected_risk": true,
+      "expected_reason": 1,
+      "expected_label": "政治宗教",
+      "expected_action": "封禁",
+      "difficulty": "easy",
+      "note": "政治宗教，高置信度，适合考察明确风险识别，含上下文"
+    },
+    {
+      "id": "log_000080",
+      "expected_risk": true,
+      "expected_reason": 1,
+      "expected_label": "政治宗教",
+      "expected_action": "人工复核",
+      "difficulty": "hard",
+      "note": "政治宗教，低置信度，适合考察误杀判断"
+    },
+    {
+      "id": "log_000081",
+      "expected_risk": true,
+      "expected_reason": 1,
+      "expected_label": "政治宗教",
+      "expected_action": "人工复核",
+      "difficulty": "hard",
+      "note": "政治宗教，低置信度，适合考察误杀判断"
+    },
+    {
+      "id": "log_000082",
+      "expected_risk": true,
+      "expected_reason": 1,
+      "expected_label": "政治宗教",
+      "expected_action": "人工复核",
+      "difficulty": "hard",
+      "note": "政治宗教，低置信度，适合考察误杀判断，含上下文"
+    },
+    {
+      "id": "log_000083",
+      "expected_risk": true,
+      "expected_reason": 1,
+      "expected_label": "政治宗教",
+      "expected_action": "人工复核",
+      "difficulty": "hard",
+      "note": "政治宗教，低置信度，适合考察误杀判断"
+    },
+    {
+      "id": "log_000084",
+      "expected_risk": true,
+      "expected_reason": 2,
+      "expected_label": "色情低俗",
+      "expected_action": "封禁",
+      "difficulty": "easy",
+      "note": "色情低俗，高置信度，适合考察明确风险识别，含上下文"
+    },
+    {
+      "id": "log_000085",
+      "expected_risk": true,
+      "expected_reason": 2,
+      "expected_label": "色情低俗",
+      "expected_action": "封禁",
+      "difficulty": "easy",
+      "note": "色情低俗，高置信度，适合考察明确风险识别"
+    },
+    {
+      "id": "log_000086",
+      "expected_risk": true,
+      "expected_reason": 2,
+      "expected_label": "色情低俗",
+      "expected_action": "封禁",
+      "difficulty": "easy",
+      "note": "色情低俗，高置信度，适合考察明确风险识别"
+    },
+    {
+      "id": "log_000087",
+      "expected_risk": true,
+      "expected_reason": 2,
+      "expected_label": "色情低俗",
+      "expected_action": "观察",
+      "difficulty": "medium",
+      "note": "色情低俗，中置信度，需要结合上下文判断，含上下文"
+    },
+    {
+      "id": "log_000088",
+      "expected_risk": true,
+      "expected_reason": 2,
+      "expected_label": "色情低俗",
+      "expected_action": "观察",
+      "difficulty": "medium",
+      "note": "色情低俗，中置信度，需要结合上下文判断"
+    },
+    {
+      "id": "log_000089",
+      "expected_risk": true,
+      "expected_reason": 2,
+      "expected_label": "色情低俗",
+      "expected_action": "观察",
+      "difficulty": "medium",
+      "note": "色情低俗，中置信度，需要结合上下文判断"
+    },
+    {
+      "id": "log_000090",
+      "expected_risk": true,
+      "expected_reason": 2,
+      "expected_label": "色情低俗",
+      "expected_action": "观察",
+      "difficulty": "medium",
+      "note": "色情低俗，中置信度，需要结合上下文判断，含上下文"
+    },
+    {
+      "id": "log_000091",
+      "expected_risk": true,
+      "expected_reason": 6,
+      "expected_label": "运营规避",
+      "expected_action": "禁言",
+      "difficulty": "easy",
+      "note": "运营规避，高置信度，适合考察明确风险识别，含上下文"
+    },
+    {
+      "id": "log_000092",
+      "expected_risk": true,
+      "expected_reason": 6,
+      "expected_label": "运营规避",
+      "expected_action": "禁言",
+      "difficulty": "easy",
+      "note": "运营规避，高置信度，适合考察明确风险识别"
+    },
+    {
+      "id": "log_000093",
+      "expected_risk": true,
+      "expected_reason": 6,
+      "expected_label": "运营规避",
+      "expected_action": "人工复核",
+      "difficulty": "hard",
+      "note": "运营规避，低置信度，适合考察误杀判断"
+    },
+    {
+      "id": "log_000094",
+      "expected_risk": true,
+      "expected_reason": 6,
+      "expected_label": "运营规避",
+      "expected_action": "人工复核",
+      "difficulty": "hard",
+      "note": "运营规避，低置信度，适合考察误杀判断，含上下文"
+    },
+    {
+      "id": "log_000095",
+      "expected_risk": true,
+      "expected_reason": 6,
+      "expected_label": "运营规避",
+      "expected_action": "人工复核",
+      "difficulty": "hard",
+      "note": "运营规避，低置信度，适合考察误杀判断"
+    },
+    {
+      "id": "log_000096",
+      "expected_risk": true,
+      "expected_reason": 6,
+      "expected_label": "运营规避",
+      "expected_action": "人工复核",
+      "difficulty": "hard",
+      "note": "运营规避，低置信度，适合考察误杀判断"
+    },
+    {
+      "id": "log_000097",
+      "expected_risk": true,
+      "expected_reason": 4,
+      "expected_label": "暴恐犯罪",
+      "expected_action": "加入黑名单",
+      "difficulty": "easy",
+      "note": "暴恐犯罪，高置信度，适合考察明确风险识别"
+    },
+    {
+      "id": "log_000098",
+      "expected_risk": true,
+      "expected_reason": 4,
+      "expected_label": "暴恐犯罪",
+      "expected_action": "加入黑名单",
+      "difficulty": "easy",
+      "note": "暴恐犯罪，高置信度，适合考察明确风险识别"
+    },
+    {
+      "id": "log_000099",
+      "expected_risk": true,
+      "expected_reason": 0,
+      "expected_label": "其他违禁",
+      "expected_action": "观察",
+      "difficulty": "medium",
+      "note": "其他违禁，中置信度，需要结合上下文判断"
+    },
+    {
+      "id": "log_000100",
+      "expected_risk": true,
+      "expected_reason": 127,
+      "expected_label": "渠道禁止",
+      "expected_action": "封禁",
+      "difficulty": "easy",
+      "note": "渠道禁止，高置信度，适合考察明确风险识别"
+    }
+  ]
+}

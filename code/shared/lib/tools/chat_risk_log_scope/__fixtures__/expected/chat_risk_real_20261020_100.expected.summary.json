@@ -1,0 +1,164 @@
+{
+  "summary": {
+    "totalCount": 100,
+    "riskCount": 70,
+    "normalCount": 30,
+    "reasonCounts": {
+      "-1": 30,
+      "0": 1,
+      "1": 8,
+      "2": 7,
+      "3": 20,
+      "4": 2,
+      "5": 25,
+      "6": 6,
+      "127": 1
+    },
+    "reasonRatios": {
+      "-1": 0.3,
+      "0": 0.01,
+      "1": 0.08,
+      "2": 0.07,
+      "3": 0.2,
+      "4": 0.02,
+      "5": 0.25,
+      "6": 0.06,
+      "127": 0.01
+    },
+    "highConfidenceRisk": 40,
+    "lowConfidenceSuspect": 17,
+    "accountCount": 10,
+    "areaServerCount": 3
+  },
+  "riskDistribution": [
+    { "reason": 5, "label": "广告诈骗", "count": 25, "ratio": 0.25 },
+    { "reason": 3, "label": "侮辱谩骂", "count": 20, "ratio": 0.2 },
+    { "reason": 1, "label": "政治宗教", "count": 8, "ratio": 0.08 },
+    { "reason": 2, "label": "色情低俗", "count": 7, "ratio": 0.07 },
+    { "reason": 6, "label": "运营规避", "count": 6, "ratio": 0.06 },
+    { "reason": 4, "label": "暴恐犯罪", "count": 2, "ratio": 0.02 },
+    { "reason": 0, "label": "其他违禁", "count": 1, "ratio": 0.01 },
+    { "reason": 127, "label": "渠道禁止", "count": 1, "ratio": 0.01 }
+  ],
+  "accounts": [
+    {
+      "account": "user_0001",
+      "nickname": "清风",
+      "count": 20,
+      "mainReason": 0,
+      "mainReasonLabel": "",
+      "highRiskCount": 0,
+      "suspectedRepeat": false,
+      "recommendedAction": "放行"
+    },
+    {
+      "account": "ad_bot_01",
+      "nickname": "福利客服",
+      "count": 15,
+      "mainReason": 5,
+      "mainReasonLabel": "广告诈骗",
+      "highRiskCount": 12,
+      "suspectedRepeat": true,
+      "recommendedAction": "加入黑名单"
+    },
+    {
+      "account": "abuser_01",
+      "nickname": "暴躁老哥",
+      "count": 12,
+      "mainReason": 3,
+      "mainReasonLabel": "侮辱谩骂",
+      "highRiskCount": 6,
+      "suspectedRepeat": true,
+      "recommendedAction": "加入黑名单"
+    },
+    {
+      "account": "user_0002",
+      "nickname": "明月",
+      "count": 10,
+      "mainReason": 0,
+      "mainReasonLabel": "",
+      "highRiskCount": 0,
+      "suspectedRepeat": false,
+      "recommendedAction": "放行"
+    },
+    {
+      "account": "ad_bot_02",
+      "nickname": "代练工作室",
+      "count": 10,
+      "mainReason": 5,
+      "mainReasonLabel": "广告诈骗",
+      "highRiskCount": 7,
+      "suspectedRepeat": true,
+      "recommendedAction": "加入黑名单"
+    },
+    {
+      "account": "abuser_02",
+      "nickname": "嘴强王者",
+      "count": 8,
+      "mainReason": 3,
+      "mainReasonLabel": "侮辱谩骂",
+      "highRiskCount": 3,
+      "suspectedRepeat": true,
+      "recommendedAction": "加入黑名单"
+    },
+    {
+      "account": "political_01",
+      "nickname": "时政观察",
+      "count": 8,
+      "mainReason": 1,
+      "mainReasonLabel": "政治宗教",
+      "highRiskCount": 4,
+      "suspectedRepeat": true,
+      "recommendedAction": "加入黑名单"
+    },
+    {
+      "account": "porn_01",
+      "nickname": "深夜频道",
+      "count": 7,
+      "mainReason": 2,
+      "mainReasonLabel": "色情低俗",
+      "highRiskCount": 3,
+      "suspectedRepeat": true,
+      "recommendedAction": "加入黑名单"
+    },
+    {
+      "account": "evasion_01",
+      "nickname": "低调引流",
+      "count": 6,
+      "mainReason": 6,
+      "mainReasonLabel": "运营规避",
+      "highRiskCount": 2,
+      "suspectedRepeat": true,
+      "recommendedAction": "封禁"
+    },
+    {
+      "account": "mixed_risk_01",
+      "nickname": "混合风险",
+      "count": 4,
+      "mainReason": 4,
+      "mainReasonLabel": "暴恐犯罪",
+      "highRiskCount": 3,
+      "suspectedRepeat": true,
+      "recommendedAction": "加入黑名单"
+    }
+  ],
+  "judgementsSummary": {
+    "total": 70,
+    "degradedCount": 70,
+    "falsePositiveCount": 17,
+    "actionCounts": {
+      "加入黑名单": 21,
+      "观察": 13,
+      "人工复核": 17,
+      "禁言": 11,
+      "封禁": 8
+    }
+  },
+  "falsePositiveCount": 17,
+  "samplesCount": 15,
+  "samplePurposeCounts": {
+    "模型训练样本": 5,
+    "误杀排查样本": 5,
+    "人工复核样本": 5
+  }
+}
