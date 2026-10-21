@@ -11,3 +11,5 @@ Thumbs.db
 *.tsbuildinfo
 reports/
 .cache/
+config/database.json
+config/database.local.json

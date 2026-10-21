@@ -8,8 +8,15 @@ import { discoverAndLoadExtensions } from "@earendil-works/pi-coding-agent";
 import type { AnalysisResult, JudgeMessageResult } from "../types.ts";
 import registerChatRiskLogScope from "../index.ts";
 import { analyzeFileTool } from "../tools/analyze-file.tool.ts";
+import { fetchLogsTool } from "../tools/fetch-logs.tool.ts";
 import { judgeMessageTool } from "../tools/judge-message.tool.ts";
-import { analyzeFileParameters, judgeMessageParameters } from "../tools/schema.ts";
+import { saveJudgementsTool } from "../tools/save-judgements.tool.ts";
+import {
+	analyzeFileParameters,
+	fetchLogsParameters,
+	judgeMessageParameters,
+	saveJudgementsParameters,
+} from "../tools/schema.ts";
 
 type ToolResult = { content: Array<{ type: string; text?: string }>; details: unknown; isError?: boolean };
 
@@ -188,6 +195,8 @@ test("judge-message tool: 参数错误返回可读错误", async () => {
 test("工具 Schema: 名称与关键字段", () => {
 	assert.equal(analyzeFileTool.name, "chat_risk_log_scope_analyze_file");
 	assert.equal(judgeMessageTool.name, "chat_risk_log_scope_judge_message");
+	assert.equal(fetchLogsTool.name, "chat_risk_log_scope_fetch_logs");
+	assert.equal(saveJudgementsTool.name, "chat_risk_log_scope_save_judgements");
 	const analyzeSchema = JSON.stringify(analyzeFileParameters);
 	assert.ok(analyzeSchema.includes('"source"'));
 	assert.ok(analyzeSchema.includes('"incremental"'));
@@ -196,9 +205,20 @@ test("工具 Schema: 名称与关键字段", () => {
 	assert.ok(judgeSchema.includes('"reason"'));
 	assert.ok(judgeSchema.includes('"confidence"'));
 	assert.equal(judgeMessageTool.annotations?.readOnlyHint, true);
+
+	const fetchSchema = JSON.stringify(fetchLogsParameters);
+	assert.ok(fetchSchema.includes('"limit"'));
+	assert.ok(fetchSchema.includes('"includeJudged"'));
+	assert.equal(fetchLogsTool.annotations?.readOnlyHint, true);
+
+	const saveSchema = JSON.stringify(saveJudgementsParameters);
+	assert.ok(saveSchema.includes('"judgements"'));
+	assert.ok(saveSchema.includes('"log_id"'));
+	assert.ok(saveSchema.includes('"is_risk"'));
+	assert.equal(saveJudgementsTool.annotations?.readOnlyHint, false);
 });
 
-test("extension: 默认工厂注册两个工具", () => {
+test("extension: 默认工厂注册四个工具", () => {
 	const names: string[] = [];
 	const fakePi = {
 		registerTool: (tool: { name: string }) => {
@@ -209,14 +229,18 @@ test("extension: 默认工厂注册两个工具", () => {
 	assert.deepEqual(names, [
 		"chat_risk_log_scope_analyze_file",
 		"chat_risk_log_scope_judge_message",
+		"chat_risk_log_scope_fetch_logs",
+		"chat_risk_log_scope_save_judgements",
 	]);
 });
 
-test("extension: pi loader 可加载并发现两个工具", async () => {
+test("extension: pi loader 可加载并发现四个工具", async () => {
 	const extensionPath = path.resolve(import.meta.dirname, "..", "index.ts");
 	const result = await discoverAndLoadExtensions([extensionPath], process.cwd());
 	assert.deepEqual(result.errors, []);
 	const names = result.extensions.flatMap((extension) => [...extension.tools.keys()]);
 	assert.ok(names.includes("chat_risk_log_scope_analyze_file"));
 	assert.ok(names.includes("chat_risk_log_scope_judge_message"));
+	assert.ok(names.includes("chat_risk_log_scope_fetch_logs"));
+	assert.ok(names.includes("chat_risk_log_scope_save_judgements"));
 });

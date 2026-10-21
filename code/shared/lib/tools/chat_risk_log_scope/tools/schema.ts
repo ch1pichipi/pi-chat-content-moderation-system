@@ -113,3 +113,68 @@ export const judgeMessageParameters = Type.Object({
 });
 
 export type JudgeMessageToolParams = Static<typeof judgeMessageParameters>;
+
+const suggestedActionSchema = Type.Union([
+	Type.Literal("放行"),
+	Type.Literal("观察"),
+	Type.Literal("人工复核"),
+	Type.Literal("禁言"),
+	Type.Literal("封禁"),
+	Type.Literal("加入黑名单"),
+]);
+
+export const fetchLogsParameters = Type.Object({
+	limit: Type.Optional(
+		Type.Integer({
+			minimum: 1,
+			maximum: 1000,
+			description: "本次最多读取多少条日志，默认 50",
+		}),
+	),
+	includeJudged: Type.Optional(
+		Type.Boolean({
+			description: "是否包含已有判断结果的日志，默认 false（只读未判断日志）",
+		}),
+	),
+	createTimeFrom: Type.Optional(
+		Type.String({ description: "可选：起始 create_time，格式 YYYY-MM-DD HH:mm:ss.SSS" }),
+	),
+	createTimeTo: Type.Optional(
+		Type.String({ description: "可选：结束 create_time，格式 YYYY-MM-DD HH:mm:ss.SSS" }),
+	),
+});
+
+export type FetchLogsToolParams = Static<typeof fetchLogsParameters>;
+
+export const saveJudgementsParameters = Type.Object({
+	judgements: Type.Array(
+		Type.Object({
+			log_id: Type.String({ description: "对应 chat_risk_logs.id" }),
+			is_risk: Type.Boolean({ description: "是否判定为违规" }),
+			reason: Type.Integer({ description: "风险类型编码，正常为 -1" }),
+			label: Type.String({ description: "风险类型中文标签" }),
+			confidence: Type.Number({
+				minimum: 0,
+				maximum: 1,
+				description: "Agent 置信度 0~1",
+			}),
+			action: suggestedActionSchema,
+			evidence: Type.Optional(
+				Type.Array(Type.String(), { description: "支撑判断的原文片段" }),
+			),
+			agent_model: Type.Optional(
+				Type.String({ description: "Agent 模型标识，例如 deepseek-v4.1-flash" }),
+			),
+			judged_at: Type.Optional(
+				Type.String({ description: "判断时间；省略时使用当前时间" }),
+			),
+		}),
+		{
+			minItems: 1,
+			maxItems: 1000,
+			description: "Agent 对日志的独立判断结果",
+		},
+	),
+});
+
+export type SaveJudgementsToolParams = Static<typeof saveJudgementsParameters>;

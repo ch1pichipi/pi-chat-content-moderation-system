@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>实时聊天审核与封禁</title>
+		<link rel="stylesheet" href="/style.css" />
+	</head>
+	<body>
+		<div class="app">
+			<aside class="sidebar">
+				<div class="sidebar-header">
+					<h1>审核控制台</h1>
+					<div class="conn" id="connStatus">
+						<span class="dot"></span><span id="connText">连接中…</span>
+					</div>
+				</div>
+				<div class="sidebar-title">玩家 <span id="playerCount" class="muted"></span></div>
+				<ul class="player-list" id="playerList"></ul>
+				<div class="sidebar-footer">
+					<div class="muted">窗口 <span id="windowInfo">-</span></div>
+					<div class="muted">模型 <span id="modelInfo">-</span></div>
+					<button type="button" id="refreshBtn" class="ghost-btn">刷新列表</button>
+				</div>
+			</aside>
+
+			<main class="main">
+				<header class="topbar">
+					<div class="player-meta">
+						<div class="player-name" id="currentNickname">未选择玩家</div>
+						<div class="player-sub" id="currentAccount"></div>
+					</div>
+					<div class="status-area">
+						<span class="status-pill" id="statusPill">正常</span>
+						<span class="countdown" id="countdown"></span>
+						<button type="button" id="unbanBtn" class="unban-btn" hidden>提前解封</button>
+					</div>
+				</header>
+
+				<div class="ban-banner" id="banBanner" hidden>
+					<div class="ban-banner-title" id="banBannerTitle"></div>
+					<div class="ban-banner-detail" id="banBannerDetail"></div>
+				</div>
+
+				<section class="chat" id="chat" aria-live="polite"></section>
+
+				<section class="analysis-panel" id="analysisPanel" hidden></section>
+
+				<form class="composer" id="composer">
+					<textarea
+						id="input"
+						placeholder="输入聊天内容，Enter 发送，Shift+Enter 换行"
+						maxlength="2000"
+						rows="1"
+					></textarea>
+					<div class="composer-actions">
+						<span class="char-count" id="charCount">0 / 2000</span>
+						<span class="analyzing" id="analyzingHint" hidden>分析中…</span>
+						<button type="submit" id="sendBtn">发送</button>
+					</div>
+				</form>
+			</main>
+		</div>
+		<div class="toast" id="toast" hidden></div>
+		<script src="/app.js"></script>
+	</body>
+</html>

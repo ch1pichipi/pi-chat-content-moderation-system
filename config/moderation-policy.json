@@ -1,0 +1,31 @@
+{
+  "confidenceCaps": {
+    "0.60": "ban_1h",
+    "0.80": "ban_1d",
+    "0.90": "ban_3d",
+    "0.95": "permanent"
+  },
+  "reasonSeverity": {
+    "0": "low",
+    "7": "low",
+    "3": "medium",
+    "6": "medium",
+    "1": "high",
+    "2": "high",
+    "127": "high",
+    "-128": "high",
+    "4": "critical",
+    "5": "critical"
+  },
+  "severityCaps": {
+    "low": "ban_1h",
+    "medium": "ban_1d",
+    "high": "ban_3d",
+    "critical": "permanent"
+  },
+  "repeat": {
+    "windowHours": 24,
+    "permanentMinPriorBans": 2,
+    "permanentOnFirstCritical": false
+  }
+}

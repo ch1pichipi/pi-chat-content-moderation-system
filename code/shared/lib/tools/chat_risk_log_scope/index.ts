@@ -12,7 +12,9 @@
 import type { ExtensionAPI } from "@earendil-works/pi-coding-agent";
 
 import { analyzeFileTool } from "./tools/analyze-file.tool.ts";
+import { fetchLogsTool } from "./tools/fetch-logs.tool.ts";
 import { judgeMessageTool } from "./tools/judge-message.tool.ts";
+import { saveJudgementsTool } from "./tools/save-judgements.tool.ts";
 
 export { analyzeFile } from "./analyze.ts";
 export type {
@@ -25,14 +27,75 @@ export type { AnalyzeOptionsInput as AnalyzeOptions } from "./config.ts";
 export { judgeMessage, formatJudgeMessageContent } from "./judge-message.ts";
 export type { JudgeMessageParams } from "./judge-message.ts";
 
-export { analyzeFileTool, judgeMessageTool } from "./tools/index.ts";
-export type { AnalyzeFileToolDetails, JudgeMessageToolDetails } from "./tools/index.ts";
+export { analyzeFileTool, judgeMessageTool, fetchLogsTool, saveJudgementsTool } from "./tools/index.ts";
+export type {
+	AnalyzeFileToolDetails,
+	JudgeMessageToolDetails,
+	FetchLogsToolDetails,
+	SaveJudgementsToolDetails,
+} from "./tools/index.ts";
 export {
 	analyzeFileParameters,
 	judgeMessageParameters,
+	fetchLogsParameters,
+	saveJudgementsParameters,
 	type AnalyzeFileToolParams,
 	type JudgeMessageToolParams,
+	type FetchLogsToolParams,
+	type SaveJudgementsToolParams,
 } from "./tools/schema.ts";
+
+export { getDbPool, createDbPool, closeDbPool, loadDbConfig } from "./db/client.ts";
+export { fetchLogs, upsertLogs, countLogs, countUnjudgedLogs } from "./db/logs.ts";
+export {
+	saveJudgements,
+	saveJudgementReturningId,
+	countJudgements,
+	fetchJudgementsByLogIds,
+} from "./db/judgements.ts";
+export {
+	BAN_PUNISHMENTS,
+	BAN_PUNISHMENT_SECONDS,
+	BAN_STATUSES,
+	banRemainingSeconds,
+	countBansSince,
+	createBan,
+	expireStaleBans,
+	fetchActiveBan,
+	fetchActiveBans,
+	fetchBansForAccount,
+	fetchLastBan,
+	isBanActive,
+	isBanPunishment,
+	liftActiveBan,
+} from "./db/bans.ts";
+export type {
+	BanPunishment,
+	BanState,
+	ChatPlayerBanRecord,
+	CreateBanInput,
+} from "./db/bans.ts";
+export {
+	createMessageId,
+	countRecentRiskJudgements,
+	fetchMessageById,
+	fetchRecentMessages,
+	insertMessage,
+	listPlayers,
+} from "./db/messages.ts";
+export type {
+	ChatMessageRecord,
+	FetchRecentMessagesOptions,
+	InsertMessageInput,
+	PlayerOverview,
+} from "./db/messages.ts";
+export { formatMysqlDateTime, parseMysqlDateTime } from "./db/datetime.ts";
+export type {
+	AgentJudgementInput,
+	BlindLogRecord,
+	DbConfig,
+	FetchLogsOptions,
+} from "./db/types.ts";
 
 export type {
 	AIJudgement,
@@ -63,8 +126,10 @@ export { DEFAULT_KEYWORDS, inferRiskFromKeywords, normalizeText } from "./ai/moc
 export { MockJudge, judgeByKeywords, judgeByOriginalVerdict } from "./ai/mock.ts";
 export type { Judge } from "./ai/index.ts";
 
-/** pi 扩展工厂：注册两个聊天风险日志工具。 */
+/** pi 扩展工厂：注册聊天风险日志分析、数据库读取与判断结果写回工具。 */
 export default function registerChatRiskLogScope(pi: ExtensionAPI): void {
 	pi.registerTool(analyzeFileTool);
 	pi.registerTool(judgeMessageTool);
+	pi.registerTool(fetchLogsTool);
+	pi.registerTool(saveJudgementsTool);
 }
